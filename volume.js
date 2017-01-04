@@ -66,6 +66,7 @@ $(document).ready(function() {
 		console.log('It seems you haven\'t started the stream. Press "Play".')
 	} else {
 		var clipID = soundManager.soundIDs[0]
+		console.log('You should have control of the volume now.')
 	}
 
 	function showVal(newVal){
@@ -88,7 +89,8 @@ $(document).ready(function() {
 	volumey.on('input', function() { 
 		var updatedVol = this.value;
 		currentSound = soundManager.soundIDs[0];
-		soundManager.setVolume(currentSound, updatedVol);
+		clipID = currentSound;
+		soundManager.setVolume(clipID, updatedVol);
 		showVal(this.value);
 	});
 });
