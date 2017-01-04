@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Best Show volume slider",
+  "description": "This extension adds a volume slider to the 24/7 stream.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+  	{
+  		"matches": [
+  			"http://thebestshow.net/247/"
+  		],
+  		"js": ["jquery-2.2.0.min.js", "content.js"]
+  }],
+  "permissions": [
+    "activeTab",    "http://thebestshow.net/247/"
+  ],
+  "web_accessible_resources": [
+    "volume.js"
+  ]
+}
