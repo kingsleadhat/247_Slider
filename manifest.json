@@ -15,7 +15,7 @@
   		"matches": [
   			"http://thebestshow.net/247/"
   		],
-  		"js": ["jquery-2.2.0.min.js", "content.js"]
+  		"js": ["content.js"]
   }],
   "permissions": [
     "activeTab",    "http://thebestshow.net/247/"
