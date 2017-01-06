@@ -3,10 +3,20 @@ $(document).ready(function() {
 	/* Create volume slider and volume value box. Hide both elements. */
 	
 	$('#logo-247').append(' \
-    <center><span id="valBox" style="position: absolute; bottom: 120px; margin: 0 auto auto; left: 0; right: 0;"></span></center> \
-	<input id="volume_slider" style="position: absolute; bottom: 100px; margin: 0 auto auto; left:40%; right: 0px; z-index=101;" \
-		type="range" min="0" max="100" value="50"></input> \
-	<center><span id="timerBox" style="position: absolute; bottom: 90px; margin: 0 auto auto; left: 0; right: 0; font-size: 7pt;"></span></center>');
+	    <center>\
+	    	<span id="valBox" style="position: absolute; bottom: 120px; \
+	    		margin: 0 auto auto; left: 0; right: 0;">\
+	    	</span> \
+	    </center> \
+		<input id="volume_slider" style="position: absolute; bottom: 100px; \
+			margin: 0 auto auto; left:40%; right: 0px; z-index=101;" \
+			type="range" min="0" max="100" value="50"> \
+		</input> \
+		<center> \
+			<span id="timerBox" style="position: absolute; bottom: 90px; \
+				margin: 0 auto auto; left: 0; right: 0; font-size: 7pt;"> \
+			</span> \
+		</center>');
 
 	
 	/* Dumb console Banner */ 
